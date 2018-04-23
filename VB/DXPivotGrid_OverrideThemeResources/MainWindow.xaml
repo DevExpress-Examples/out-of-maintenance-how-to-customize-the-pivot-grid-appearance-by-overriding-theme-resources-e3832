@@ -1,0 +1,64 @@
+﻿<Window xmlns:dxpgi="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid/internal" 
+        xmlns:dxpg="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        x:Class="DXPivotGrid_OverrideThemeResources.MainWindow"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        dxc:ThemeManager.ThemeName="Office2007Black"
+        Height="600" Width="800"
+        Title="Main Window">
+    <Grid>
+        <Grid.Resources>
+            <ResourceDictionary>
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=PivotBackground, ThemeName=Office2007Black}" Color="White" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=PivotBorderBrush, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=HeaderEmptyTextForeground, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=HeaderNormalGradient, ThemeName=Office2007Black}" Color="White" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=HeaderActiveGradient, ThemeName=Office2007Black}" Color="White" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=HeaderControlsColor, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=FilterColor, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=FilterMouseOverColor, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=FieldTotalBrush, ThemeName=Office2007Black}" Color="White" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=FieldValueSelectedBrush, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=FieldValueBorderBrush, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=FieldValueBackground, ThemeName=Office2007Black}" Color="White" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=ExpandButtonColor, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=ExpandButtonBackground, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=ExpandButtonInnerBackground, ThemeName=Office2007Black}" Color="White" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=CellValueBrush, ThemeName=Office2007Black}" Color="White" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=CellSelectedForegroundBrush, ThemeName=Office2007Black}" Color="White" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=ValueTotalSelectedBrush, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=CellValueBorderBrush, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=CellTotalSelectedForegroundBrush, ThemeName=Office2007Black}" Color="White" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=CellTotalBrush, ThemeName=Office2007Black}" Color="White" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=CellSelectedBrush, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=CellTotalSelectedBrush, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=ValueSelectedForegroundBrush, ThemeName=Office2007Black}" Color="White" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=ValueTotalSelectedForegroundBrush, ThemeName=Office2007Black}" Color="White" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=FocusedDataItemStroke, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=FieldListDragTextForeground, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=GroupBorderShadowColor, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=GroupButtonFill, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=GroupBorderBrush, ThemeName=Office2007Black}" Color="Black" />
+                <SolidColorBrush x:Key="{dxpgi:AppearanceThemeKey ResourceKey=AreaSeparatorBrush, ThemeName=Office2007Black}" Color="Black" />
+                <Style x:Key="{dxpgi:AppearanceThemeKey ResourceKey=EmptyAreaHighlighterStyle, ThemeName=Office2007Black}" TargetType="{x:Type Border}">
+                    <Setter Property="Background" Value="Black" />
+                    <Setter Property="Margin" Value="-3" />
+                </Style>
+                <sys:String x:Key="ThemeName">Office2007Black</sys:String>
+            </ResourceDictionary>
+        </Grid.Resources>
+        <dxpg:PivotGridControl Name="pivotGridControl1">
+            <dxpg:PivotGridControl.Fields>
+                <dxpg:PivotGridField Name="fieldYear" FieldName="OrderDate" Area="ColumnArea"
+                                     Caption="Year" GroupInterval="DateYear"/>
+                <dxpg:PivotGridField Name="fieldMonth" FieldName="OrderDate" Area="ColumnArea"
+                                     Caption="Month" GroupInterval="DateMonth"/>
+                <dxpg:PivotGridField Name="fieldCategoryName" FieldName="CategoryName"
+                                     Area="RowArea" Caption="Category"/>
+                <dxpg:PivotGridField Name="fieldQuantity" FieldName="Quantity" Area="DataArea"/>
+            </dxpg:PivotGridControl.Fields>
+        </dxpg:PivotGridControl>
+    </Grid>
+</Window>
