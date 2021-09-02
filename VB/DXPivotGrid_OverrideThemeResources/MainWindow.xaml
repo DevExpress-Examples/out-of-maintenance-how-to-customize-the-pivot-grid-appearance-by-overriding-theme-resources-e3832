@@ -1,4 +1,4 @@
-<Window xmlns:dxpgi="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid/internal" 
+﻿<Window xmlns:dxpgi="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid/internal" 
         xmlns:dxpg="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/core"
