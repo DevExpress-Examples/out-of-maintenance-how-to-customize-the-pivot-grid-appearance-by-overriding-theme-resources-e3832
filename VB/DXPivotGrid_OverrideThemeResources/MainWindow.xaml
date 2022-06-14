@@ -49,28 +49,15 @@
                 <sys:String x:Key="ThemeName">Office2007Black</sys:String>
             </ResourceDictionary>
         </Grid.Resources>
-        <dxpg:PivotGridControl Name="pivotGridControl1" DataProcessingEngine="Optimized">
+        <dxpg:PivotGridControl Name="pivotGridControl1">
             <dxpg:PivotGridControl.Fields>
-                <dxpg:PivotGridField Name="fieldYear" Area="ColumnArea" Caption="Year" >
-                    <dxpg:PivotGridField.DataBinding>
-                        <dxpg:DataSourceColumnBinding ColumnName="OrderDate" GroupInterval="DateYear"/>
-                    </dxpg:PivotGridField.DataBinding>
-                </dxpg:PivotGridField>
-                <dxpg:PivotGridField Name="fieldMonth" Area="ColumnArea">
-                    <dxpg:PivotGridField.DataBinding>
-                        <dxpg:DataSourceColumnBinding ColumnName="OrderDate" GroupInterval="DateMonth"/>
-                    </dxpg:PivotGridField.DataBinding>
-                </dxpg:PivotGridField>
-                <dxpg:PivotGridField Name="fieldCategoryName" Area="RowArea" Caption="Category">
-                    <dxpg:PivotGridField.DataBinding>
-                        <dxpg:DataSourceColumnBinding ColumnName="CategoryName"/>
-                    </dxpg:PivotGridField.DataBinding>
-                </dxpg:PivotGridField>
-                <dxpg:PivotGridField Name="fieldQuantity" Area="DataArea">
-                    <dxpg:PivotGridField.DataBinding>
-                        <dxpg:DataSourceColumnBinding ColumnName="Quantity"/>
-                    </dxpg:PivotGridField.DataBinding>
-                </dxpg:PivotGridField>
+                <dxpg:PivotGridField Name="fieldYear" FieldName="OrderDate" Area="ColumnArea"
+                                     Caption="Year" GroupInterval="DateYear"/>
+                <dxpg:PivotGridField Name="fieldMonth" FieldName="OrderDate" Area="ColumnArea"
+                                     Caption="Month" GroupInterval="DateMonth"/>
+                <dxpg:PivotGridField Name="fieldCategoryName" FieldName="CategoryName"
+                                     Area="RowArea" Caption="Category"/>
+                <dxpg:PivotGridField Name="fieldQuantity" FieldName="Quantity" Area="DataArea"/>
             </dxpg:PivotGridControl.Fields>
         </dxpg:PivotGridControl>
     </Grid>
